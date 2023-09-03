@@ -1,0 +1,48 @@
+#profilePic {
+    max-height: 400px;
+    justify-content: end;
+    border-radius: 40px;
+}
+
+h2 {
+    padding: .5em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.aboutMe {
+    display: inline-flex;
+}
+
+/*.logo {
+    margin: 0;
+}*/
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+li {
+    padding: .5em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.skills img {
+    width: 2em;
+}
+
+.contact img {
+    width: 2em;
+}
+
