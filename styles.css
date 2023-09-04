@@ -1,7 +1,25 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 #profilePic {
-    max-height: 400px;
-    justify-content: end;
+    max-height: 300px;
     border-radius: 40px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+    background-color: aliceblue;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
 }
 
 h2 {
@@ -11,13 +29,77 @@ h2 {
 nav {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid blue;
 }
 
-.aboutMe {
-    display: inline-flex;
+#aboutMe {
+    display: flex;
+    border: 1px solid blue;
+    align-items: center;
+    justify-content: space-between;
+}
+#aboutMe p {
+max-width: 40%;
 }
 
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid blue;
+}
+
+#projects p {
+    max-width: 40%;
+}
+
+.project {
+    display: flex;
+}
+
+.project-title {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+#skills {
+    display: flex;
+    border: 1px solid blue;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    border: 1px solid blue;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    padding: 5px;
+    width: 10em;
+    background-color: azure;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    height: 3em;
+    width: 100%;
+    max-width: 900px;
+    background-color: azure;
+    border: 1px solid blue;
+    z-index: 2;
+}
 /*.logo {
     margin: 0;
 }*/
@@ -26,7 +108,7 @@ nav {
     list-style-type: none;
     margin: 0;
     margin-left: auto;
-    border: 1px solid black;
+    border: 1px solid red;
 }
 
 li {
@@ -38,11 +120,12 @@ a {
     text-decoration: none;
 }
 
-.skills img {
-    width: 2em;
+#skills img {
+    width: 5em;
+    padding: 1em;
 }
 
-.contact img {
+#contact img {
     width: 2em;
 }
 
