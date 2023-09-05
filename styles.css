@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0 var(--spacing-3);
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,17 +29,16 @@ h2 {
 nav {
     display: flex;
     align-items: center;
-    border: 1px solid blue;
 }
 
 #aboutMe {
     display: flex;
-    border: 1px solid blue;
     align-items: center;
     justify-content: space-between;
+    padding: 1em;
 }
 #aboutMe p {
-max-width: 40%;
+max-width: 70%;
 }
 
 #projects {
@@ -47,11 +46,10 @@ max-width: 40%;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 1em;
-    border: 1px solid blue;
 }
 
 #projects p {
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .project {
@@ -60,19 +58,21 @@ max-width: 40%;
 
 .project-title {
     display: flex;
-    width: 40%;
+    width: 14em;
     justify-content: center;
+}
+
+.project-title img {
+    width: 10em;
 }
 
 #skills {
     display: flex;
-    border: 1px solid blue;
     justify-content: center;
 }
 
 #contact {
     display: flex;
-    border: 1px solid blue;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -97,7 +97,6 @@ footer {
     width: 100%;
     max-width: 900px;
     background-color: azure;
-    border: 1px solid blue;
     z-index: 2;
 }
 /*.logo {
@@ -108,7 +107,6 @@ footer {
     list-style-type: none;
     margin: 0;
     margin-left: auto;
-    border: 1px solid red;
 }
 
 li {
